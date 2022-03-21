@@ -10,8 +10,24 @@ namespace Stunde3
     {
         static void Main(string[] args)
         {
+            /*
+            Datentypengrößen
+
             int a = int.MaxValue;
-            Console.WriteLine(a);
+            short b = short.MinValue;  // -2^8 ~ 2^8 - 1        //2*short.MaxValue+1
+            long c;
+            ushort d;  // 2^16
+
+
+
+            Verzweigungen: (if-else Anweisung)
+
+            int x = 5;
+            int y = 7;
+            if (x+y>10) Console.WriteLine("Hello");
+            else
+            {}
+            */
         }
     }
 }
