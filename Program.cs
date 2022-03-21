@@ -25,9 +25,32 @@ namespace Stunde3
             int x = 5;
             int y = 7;
             if (x+y>10) Console.WriteLine("Hello");
+            else if (x == 5)
+            {
+               int g = 9;
+            }
             else
             {}
+
+
+
+            Schleifen:  (wiederholte abläufe)
+
+            int zähler;
+            while (zähler<10)
+            {
+               zähler = zähler + 1;
+               zähler += 1;
+               zähler++;
+            }
+            
+            do
+            {
+               
+            } while (zähler <10);
+
             */
+            
         }
     }
 }
