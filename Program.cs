@@ -11,6 +11,8 @@ namespace Stunde3
         static void Main(string[] args)
         {
             int test = 6;
+            string hello;
+            Console.WriteLine("Hello");
         }
     }
 }
