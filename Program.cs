@@ -48,6 +48,9 @@ namespace Stunde3
             {
                
             } while (zähler <10);
+
+            for (int i=0; i<10; i++)
+            {}
             
             
             string test = Console.ReadLine();
@@ -55,7 +58,35 @@ namespace Stunde3
 
 
             */
+            //Beispiel
+            // Der Benutzer soll nach zwei ganzen Zahlen befragt werden,
+            // falls die Summe größer als 125 ist soll das program beendet werden
+            // ansonsten von vorn beginnen
+            /*
+            int a, b;
+             do
+             {
+                 Console.WriteLine("Enter first number:");
+                 a = Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Enter second number:");
+                 b = Convert.ToInt32(Console.ReadLine());
+             } while (a + b < 125);
+             */
 
+            // Der Benutzer soll nach einer Jahreszahl gefragt werden und es soll ausgegeben werden ob es sich um ein Schaltjahr handelt.
+            // Das Program soll von vorne Starten
+
+            int jahr, i = 0;
+
+            while (i == 0)
+            {
+                Console.WriteLine("Geben Sie ein Jahr an:");
+                jahr = Convert.ToInt32(Console.ReadLine());
+                if (jahr%100 == 0)
+                {
+                    Console.WriteLine("Dieses Jahr ist kein Schaltjahr.");
+                }
+            } 
         }
     }
 }
