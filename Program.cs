@@ -48,9 +48,14 @@ namespace Stunde3
             {
                
             } while (zähler <10);
+            
+            
+            string test = Console.ReadLine();
+            Console.WriteLine(test);
+
 
             */
-            
+
         }
     }
 }
