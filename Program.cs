@@ -82,7 +82,22 @@ namespace Stunde3
             {
                 Console.WriteLine("Geben Sie ein Jahr an:");
                 jahr = Convert.ToInt32(Console.ReadLine());
-                if (jahr%100 == 0)
+                if (jahr % 100 == 0)
+                {
+                    if (jahr % 400 == 0)
+                    {
+                        Console.WriteLine("Dieses Jahr ist ein Schaltjahr.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Dieses Jahr ist kein Schaltjahr.");
+                    }
+                }
+                else if (jahr % 4 == 0)
+                {
+                    Console.WriteLine("Dieses Jahr ist ein Schaltjahr.");
+                }
+                else
                 {
                     Console.WriteLine("Dieses Jahr ist kein Schaltjahr.");
                 }
