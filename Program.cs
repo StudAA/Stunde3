@@ -123,6 +123,7 @@ namespace Stunde3
                 i = Console.ReadLine();
             } while (i == "j" || i == "J");
 
+            // jahr%100 != 0        !(jahr%100 == 0)
         }
     }
 }
