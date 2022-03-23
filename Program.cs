@@ -76,9 +76,11 @@ namespace Stunde3
             // Der Benutzer soll nach einer Jahreszahl gefragt werden und es soll ausgegeben werden ob es sich um ein Schaltjahr handelt.
             // Das Program soll von vorne Starten
 
-            int jahr, i = 0;
+            /*
+            int jahr;
+            string i;
 
-            while (i == 0)
+            do
             {
                 Console.WriteLine("Geben Sie ein Jahr an:");
                 jahr = Convert.ToInt32(Console.ReadLine());
@@ -101,8 +103,26 @@ namespace Stunde3
                 {
                     Console.WriteLine("Dieses Jahr ist kein Schaltjahr.");
                 }
-                
-            } 
+                Console.WriteLine("Nochmal? (j/n):");
+                i = Console.ReadLine();
+            } while (i == "j" || i=="J");
+            */
+
+            // oder ||        und &&
+
+            int jahr;
+            string i;
+
+            do
+            {
+                Console.WriteLine("Geben Sie ein Jahr an:");
+                jahr = Convert.ToInt32(Console.ReadLine());
+                if (jahr % 4 == 0 && (jahr % 100 != 0 || jahr % 400 == 0)) Console.WriteLine("Dieses Jahr ist ein Schaltjahr.");
+                else Console.WriteLine("Dieses Jahr ist kein Schaltjahr.");
+                Console.WriteLine("Nochmal? (j/n):");
+                i = Console.ReadLine();
+            } while (i == "j" || i == "J");
+
         }
     }
 }
